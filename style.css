@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aquamarine;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(240, 240, 240);
+}
+
+input:focus {
+    outline: none;
+}
+
+form button {
+    font-size: 16px;
+    padding: 9px;
+    border: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 1, 0.2);
+}
+
+.container {
+    height: 450px;
+    width: 330px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    background: #fff;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+}
+
+ul .fa-check,
+.fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check {
+    right: 40px;
+}
+
+ul .fa-check:hover {
+    color: rgb(7, 230, 7);
+
+}
+
+ul .fa-trash {
+    right: 15px;
+}
+
+ul .fa-trash:hover {
+    color: red;
+}
+
+ul .checked {
+    text-decoration: line-through;
+    transition: 1s;
+    background-color: rgba(5, 207, 5, 0.507);
+}
